@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Pomodoro app</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="title"><img src="assets/logo.svg" alt="logo"></div>
+      <div class="menu">
+        <div class="pomodoro" id="pomodoro">pomodoro</div>
+        <div class="short-break" id="short-break">short break</div>
+        <div class="long-break" id="long-break">long break</div>
+      </div>
+      <div class="circle-lg">
+        <div class="circle-blue">
+          <div class="circle-red" id="circle-red">
+            <div class="value-container">0%</div>
+            <div class="time" id="time"></div>
+            <div class="pause" id="pause">START</div>
+          </div>
+        </div>
+      </div>
+      <div class="settings" id="myBtn"><img src="assets/icon-settings.svg" alt="gear"></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="mc-header">
+          <p class="p-settings">Settings</p>
+          <span class="close"><img src="assets/icon-close.svg" alt="close"></span>
+        </div>
+        <div class="line"></div>
+        <div class="mc-part1">
+          <p class="mc-part1--text">TIME (MINUTES)</p>
+        </div>
+        <div class="mc-part1--time">
+          <div class="time-pomodoro">
+            <div>pomodoro</div>
+            <input type="number" value="25" id="input-pomodoro">
+          </div>
+          <div class="time-short-break">
+            <div>short break</div>
+            <input type="number" value="5" id="input-shortBreak">
+          </div>
+          <div class="time-long-break">
+            <div>long break</div>
+            <input type="number" value="15" id="input-longBreak">
+          </div>
+        </div>
+        <div class="line2"></div>
+        <div class="mc-part2">
+          <p class="mc-part2--text">FONT</p>
+          <div class="mc-part2--circle">
+            <div class="mc-part2--circle-aa1" id="ff1aa"><input type="radio" name="ff" value="ff1" id="ff1">Aa</div>
+            <div class="mc-part2--circle-aa2" id="ff2aa"><input type="radio" name="ff" value="ff2" id="ff2">Aa</div>
+            <div class="mc-part2--circle-aa3" id="ff3aa"><input type="radio" name="ff" value="ff3" id="ff3">Aa</div>
+          </div>
+        </div>
+        <div class="line2"></div>
+        <div class="mc-part3">
+          <p class="mc-part3--text">COLOR</p>
+          <div class="mc-part3--circle">
+            <div class="mc-part3--circle1"><input type="radio" name="color" value="color1" id="color1"><img src="assets/check.svg" alt="check" id="check1"></div>
+            <div class="mc-part3--circle2"><input type="radio" name="color" value="color2" id="color2"><img src="assets/check.svg" alt="check" id="check2"></div>
+            <div class="mc-part3--circle3"><input type="radio" name="color" value="color3" id="color3"><img src="assets/check.svg" alt="check" id="check3"></div>
+          </div>
+        </div>
+        <div class="btn-apply" id="btn-apply">
+          Apply
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  
+</body>
+
+</html>
