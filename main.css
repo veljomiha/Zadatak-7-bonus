@@ -63,13 +63,13 @@ body {
 }
 
 .menu {
-    margin: 55px 0 45px 0;
+    margin: 55px auto 45px auto;
     width: 373px;
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #161932;
+    background-color: #161932;
     border-radius: 31.5px;
     overflow: hidden;
     position: relative;
@@ -100,12 +100,12 @@ body {
 }
 
 .short-break {
-    background: #161932;
+    background-color: #161932;
     color: rgba(215, 224, 255, 0.4);
 }
 
 .long-break {
-    background: #161932;
+    background-color: #161932;
     margin-right: 7px;
     color: rgba(215, 224, 255, 0.4);
 }
@@ -188,6 +188,10 @@ body {
     margin-top: 54px;
     text-align: center;
     cursor: pointer;
+    opacity: 0.5;
+}
+.settings:hover{
+    opacity: 1;
 }
 
 .modal {
@@ -206,7 +210,7 @@ body {
 }
 
 .modal-content {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 25px;
     margin: auto;
     width: 540px;
@@ -263,7 +267,7 @@ body {
     font-size: 14px;
     line-height: 14px;
     color: #1E213F;
-    background: #EFF1FA;
+    background-color: #EFF1FA;
     border-radius: 10px;
     border: none;
     padding: 15px;
@@ -282,7 +286,7 @@ body {
 
 .line2 {
     height: 1px;
-    background: #161932;
+    background-color: #161932;
     mix-blend-mode: normal;
     opacity: 0.1;
     margin: 24px 39px;
