@@ -141,7 +141,11 @@ longBreak.addEventListener("click", function () {
 btnApply.addEventListener("click", function () {
   changeMinutesLongBreak();
   changeMinutesShortBreak();
-  changeMinutesPomodoro(); 
+  changeMinutesPomodoro();
+  shortBreak.classList.remove("changeColorBtnDefault");
+  longBreak.classList.remove("changeColorBtnDefault");
+  pomodoro.classList.remove("changeColorBtn");
+  pomodoro.classList.add("changeColorBtnDefault");
 })
 
 //radio buttons colors
