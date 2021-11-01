@@ -43,15 +43,33 @@
         <div class="mc-part1--time">
           <div class="time-pomodoro">
             <div>pomodoro</div>
-            <input type="number" value="25" id="input-pomodoro">
+            <div class="number-input">
+              <input class="quantity" min="0" id="input-pomodoro" name="quantity" value="25" type="number">
+              <div class="arrows">
+                  <button onclick="document.querySelector('.quantity').stepUp()"><img src="assets/icon-arrow-up.svg" alt="plus" class="plus"></button>
+                  <button onclick="document.querySelector('.quantity').stepDown()"><img src="assets/icon-arrow-down.svg" alt="minus" class="minus"></button>
+              </div>
+          </div>
           </div>
           <div class="time-short-break">
             <div>short break</div>
-            <input type="number" value="5" id="input-shortBreak">
+            <div class="number-input">
+              <input class="quantity2" min="0" id="input-shortBreak"  value="5" type="number">
+              <div class="arrows">
+                  <button onclick="document.querySelector('.quantity2').stepUp()"><img src="assets/icon-arrow-up.svg" alt="plus" class="plus"></button>
+                  <button onclick="document.querySelector('.quantity2').stepDown()"><img src="assets/icon-arrow-down.svg" alt="minus" class="minus"></button>
+              </div>
+          </div>
           </div>
           <div class="time-long-break">
             <div>long break</div>
-            <input type="number" value="15" id="input-longBreak">
+            <div class="number-input">
+              <input class="quantity3" min="0" id="input-longBreak"  value="15" type="number">
+              <div class="arrows">
+                  <button onclick="document.querySelector('.quantity3').stepUp()"><img src="assets/icon-arrow-up.svg" alt="plus" class="plus"></button>
+                  <button onclick="document.querySelector('.quantity3').stepDown()"><img src="assets/icon-arrow-down.svg" alt="minus" class="minus"></button>
+              </div>
+          </div>
           </div>
         </div>
         <div class="line2"></div>

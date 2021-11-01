@@ -139,21 +139,6 @@ longBreak.addEventListener("click", function () {
 })
 
 btnApply.addEventListener("click", function () {
-  // if(longBreak.style.backgroundColor == "#161932"){
-  //   changeMinutesShortBreak();
-  //   changeMinutesPomodoro();
-  //   changeMinutesLongBreak();
-  // }
-  // else if(longBreak.style.backgroundColor == "#161932"){
-  //   changeMinutesPomodoro();
-  //   changeMinutesLongBreak();
-  //   changeMinutesShortBreak();
-  // }
-  // else{
-  //   changeMinutesLongBreak();
-  //   changeMinutesShortBreak();
-  //   changeMinutesPomodoro();
-  // }
   changeMinutesLongBreak();
   changeMinutesShortBreak();
   changeMinutesPomodoro(); 
